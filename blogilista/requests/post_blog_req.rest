@@ -1,0 +1,13 @@
+POST http://localhost:3003/api/blogs
+Content-Type: application/json
+
+{
+  "title" : "blogi6",
+  "author" : "Otto",
+  "url" : "urlhere",
+  "likes" : 12,
+  "userId": "6114e03f272095130cc63add"
+}
+
+
+

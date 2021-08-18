@@ -1,0 +1,9 @@
+PUT http://localhost:3003/api/blogs/saddsada
+Content-Type: application/json
+
+{
+  "title" : "blogi1",
+  "author" : "Otto",
+  "url" : "urlhere",
+  "likes" : 30
+}
