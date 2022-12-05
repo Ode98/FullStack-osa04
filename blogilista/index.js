@@ -5,6 +5,8 @@ const app = require('./app')
 
 const PORT = config.PORT
 
-app.listen(PORT, () => {
+const server = http.createServer(app)
+
+server.listen(PORT, () => {
   logger.info(`Server running on port ${PORT}`)
 })
