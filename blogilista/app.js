@@ -10,7 +10,6 @@ const usersRouter = require("./controllers/users");
 const loginRouter = require("./controllers/login");
 
 const app = express();
-
 logger.info("connecting to", config.MONGODB_URI);
 
 mongoose
@@ -27,6 +26,7 @@ mongoose
     logger.error("error connection to MongoDB:", error.message);
   });
 
+app.use(express.static("build"));
 app.use(cors());
 app.use(express.json());
 app.use(middleware.tokenExtractor);
